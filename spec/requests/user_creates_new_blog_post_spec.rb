@@ -9,8 +9,7 @@ feature 'User can create a new blog post' do
   end
 
   scenario 'User creates a new post and it is persisted' do
-    visit root_path
-    click_link 'Add ride'
+    visit new_post_path
     fill_in 'Title', with: 'Blarghh post'
     fill_in 'Content', with: 'First post!'
     click_button 'Submit Post'
